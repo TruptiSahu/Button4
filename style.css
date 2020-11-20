@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf3ec;
+  color: #e55743;
+  font-family: sans-serif;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e55743;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border: 2px solid #e55743;
+  padding: 24px 48px;
+  position: relative;
+  transition: background 0.8s ease;
+}
+
+.btn:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+
+.btn .horizontal,
+.btn .horizontal-s {
+  position: absolute;
+  border: 2px solid #e55743;
+  transition: all 1s;
+  transform: scaleX(1);
+}
+
+.btn .horizontal {
+  top: -2px;
+  left: -5%;
+  border-left: none;
+  border-right: none;
+  width: 110%;
+  height: 100%;
+}
+
+.btn .horizontal-s {
+  top: -20%;
+  left: -2px;
+  border-left: none;
+  border-right: none;
+  width: 101%;
+  height: 134%;
+}
+
+.btn:hover .horizontal,
+.btn:hover .horizontal-s {
+  transform: scaleX(0);
+}
+
+.btn .vertical,
+.btn .vertical-s {
+  position: absolute;
+  border: 2px solid #e55743;
+  transition: all 1s;
+  transform: scaleY(1);
+}
+
+.btn .vertical {
+  top: -20%;
+  left: -2px;
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+  height: 140%;
+}
+
+.btn .vertical-s {
+  top: -2px;
+  left: -5%;
+  border-top: none;
+  border-bottom: none;
+  width: 109%;
+  height: 104%;
+}
+
+.btn:hover .vertical,
+.btn:hover .vertical-s {
+  transform: scaleY(0);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
